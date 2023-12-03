@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setSupportActionBar(binding.toolbar)
+//        setSupportActionBar(binding.toolbar)
         binding.fab.setOnClickListener { view ->
             if (::mService.isInitialized) {
                 mService.startDeviceDiscovery(this)
@@ -482,9 +482,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onSupportNavigateUp(): Boolean {
-        val navController = findNavController(R.id.nav_host_fragment_content_main)
-        return navController.navigateUp(appBarConfiguration)
-                || super.onSupportNavigateUp()
+//        val navController = findNavController(R.id.nav_host_fragment_content_main)
+        return false
     }
 
     private val mBluetoothListener: IBluetoothSDKListener = object : IBluetoothSDKListener {

@@ -7,7 +7,6 @@
     android:background="@color/grey"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
     app:layout_scrollFlags="exitUntilCollapsed"
     tools:context=".MainActivity">
 
@@ -33,16 +32,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <androidx.appcompat.widget.Toolbar
-                    android:id="@+id/toolbar"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:background="@color/magenta"
-                    android:minHeight="?attr/actionBarSize"
-                    android:theme="?attr/actionBarTheme"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:layout_editor_absoluteX="0dp"
-                    tools:layout_editor_absoluteY="0dp" />
+<!--                <androidx.appcompat.widget.Toolbar-->
+<!--                    android:id="@+id/toolbar"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:background="@color/magenta"-->
+<!--                    android:minHeight="?attr/actionBarSize"-->
+<!--                    app:layout_constraintTop_toTopOf="parent"-->
+<!--                    tools:layout_editor_absoluteX="0dp"-->
+<!--                    tools:layout_editor_absoluteY="0dp" />-->
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/title_tv"
