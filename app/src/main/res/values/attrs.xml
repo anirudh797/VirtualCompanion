@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircularSeekBar">
+        <attr name="progress" format="integer" />
+        <attr name="max" format="integer" />
+        <attr name="move_outside_circle" format="boolean" />
+        <attr name="maintain_equal_circle" format="boolean" />
+        <attr name="use_custom_radii" format="boolean" />
+        <attr name="lock_enabled" format="boolean" />
+        <attr name="circle_x_radius" format="dimension" />
+        <attr name="circle_y_radius" format="dimension" />
+        <attr name="circle_stroke_width" format="dimension" />
+        <attr name="pointer_radius" format="dimension" />
+        <attr name="pointer_halo_width" format="dimension" />
+        <attr name="pointer_halo_border_width" format="dimension" />
+        <attr name="circle_color" format="color" />
+        <attr name="circle_progress_color" format="color" />
+        <attr name="pointer_color" format="color" />
+        <attr name="pointer_halo_color" format="color" />
+        <attr name="pointer_halo_color_ontouch" format="color" />
+        <attr name="pointer_alpha_ontouch" format="integer" />
+        <attr name="start_angle" format="float" />
+        <attr name="end_angle" format="float" />
+        <attr name="circle_fill" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="textAppearanceListItem">
+        <attr name="textColor" format="integer" />
+        android:textColor="@color/white_60_opaque"
+        android:text="@{settingItem.title}"
+        android:textAlignment="viewStart"
+        android:textSize="@dimen/sp18"
+        android:background="@android:color/transparent"
+
+
+    </declare-styleable>
+
+    <declare-styleable name="DPadView">
+        <!-- Padding for the image to be displayed -->
+        <attr name="imagePadding" format="dimension" />
+
+
+        <!-- Color of the direction section when it is not pressed -->
+        <attr name="normalColor" format="color" />
+
+        <!-- Color of the direction section when it is pressed -->
+        <attr name="pressedColor" format="color" />
+
+        <!-- Angle for each direction section (should be between 1 and 90) -->
+        <attr name="directionSectionAngle" format="float" />
+
+
+        <!-- Whether to enable the center circle -->
+        <attr name="centerCircleEnabled" format="boolean" />
+
+        <!-- If center circle is enabled, whether it should detect touch on center circle -->
+        <attr name="centerCirclePressEnabled" format="boolean" />
+
+        <!-- Color of the center circle when it is not pressed -->
+        <attr name="centerCircleNormalColor" format="color" />
+
+        <!-- Color of the center circle when it is pressed -->
+        <attr name="centerCirclePressedColor" format="color" />
+
+        <!-- The size of the center circle will be the size of view divided by this value -->
+        <attr name="centerCircleRatio" format="float" />
+
+
+        <!-- Text to be displayed in the center (e.g. OK) -->
+        <attr name="centerText" format="string" />
+
+        <!-- Text size for the center text -->
+        <attr name="centerTextSize" format="dimension" />
+
+        <!-- Text color for the center text -->
+        <attr name="centerTextColor" format="color" />
+
+        <!-- Text style for the center text, can be combination like bold|italic|underline-->
+        <attr name="centerTextStyle" format="flags">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+            <flag name="underline" value="4" />
+        </attr>
+
+
+        <!-- The drawable to be displayed in the center -->
+        <attr name="centerIcon" format="reference" />
+
+        <!-- Size mode for the icon, whether the size should be fixed or it should wrap the image src -->
+        <attr name="centerIconSizeMode" format="enum">
+            <enum name="wrap" value="0" />
+            <enum name="fixed" value="1" />
+        </attr>
+
+        <!-- Icon size to be used if centerIconSizeMode is set to fixed -->
+        <attr name="centerIconSize" format="dimension" />
+
+        <!-- The color to tint the center icon with -->
+        <attr name="centerIconTint" format="color" />
+    </declare-styleable>
+
+</resources>
